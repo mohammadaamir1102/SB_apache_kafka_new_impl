@@ -16,6 +16,9 @@ public class KafkaMessageListener {
     }
 
     // below creating multiple instance of the consumer for consuming same topic
+    // All below for the demo purpose in project this is not the way to implements
+    // If the partition is 3 then any 3 can consume the data. we are not sure which three instances will consume
+    // It is decided by Cardinator
 
     @KafkaListener(topics = "aaamirKhan-topic", groupId = "aamirKhan-group")
     public void consumeMessage2(String message) {
