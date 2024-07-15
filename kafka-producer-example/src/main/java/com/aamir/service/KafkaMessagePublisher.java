@@ -20,7 +20,7 @@ public class KafkaMessagePublisher {
 
 
     public void sendMessageToTopic(String message) {
-        CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("khan-topic", message);
+        CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("aaamirKhan-topic", message);
         furtherProcessing.whenComplete((result, exception) -> {
             if (exception == null) {
                 log.info("partiton is " + result.getRecordMetadata().partition());
