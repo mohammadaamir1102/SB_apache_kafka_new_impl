@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bec3164-c6d4-4def-ad21-6e1857a6a4ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Core Java Student/CoreJavaCenterStudent/src/com/aamir/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/AuthServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/config/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/entity/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/entity/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/repo/RefreshTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/repo/UserInfoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/request/AuthRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/request/RefreshTokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/request/UserInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/response/AuthResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/service/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/java/com/auth/util/RefreshTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExpenseTracker/AuthService/src/test/java/com/auth/AuthServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/SpringBootRedisCacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/repo/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/java/com/amir/redis/util/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RedisCache/SpringBootRedisCache/src/test/java/com/amir/redis/SpringBootRedisCacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring boot 3 new features/SpringBoot3Features/src/main/java/com/aamir/advice/CustomerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring boot 3 new features/SpringBoot3Features/src/main/java/com/aamir/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring boot 3 new features/SpringBoot3Features/src/main/java/com/aamir/dto/CustomerRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring boot 3 new features/SpringBoot3Features/src/main/java/com/aamir/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/record/RegisterCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/record/ResponseCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/repo/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootEmailVerification/src/main/java/com/aamir/service/impl/EmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootInterview/src/main/java/other/pkg/OtherPackageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/SpringBootRedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/dto/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/mapper/EntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/repo/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/java/com/amir/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedis/src/test/java/com/amir/SpringBootRedisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedisCache/src/main/java/com/amir/redis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootRedisCache/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootThymeleaf/src/main/java/com/aamir/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootThymeleaf/src/main/java/com/aamir/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootThymeleaf/src/main/java/com/aamir/repo/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootThymeleaf/src/main/java/com/aamir/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootThymeleaf/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/repo/StudentRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-installation/kafka-installation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/kafka_producer_example/KafkaProducerExampleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/kafka_producer_example/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/kafka_producer_example/controller/EvenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/kafka_producer_example/service/KafkaMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/test/java/com/aamir/kafka_producer_example/KafkaProducerExampleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Microservices/ServiceRegistry/src/main/java/com/aamir/service/registry/ServiceRegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Microservices/ServiceRegistry/src/main/java/com/aamir/service/registry/ServiceRegistryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/repository/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBatch/src/main/java/com/aamir/batch/SpringBatch/SpringBatchApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBatch/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBatch/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBatch/src/test/java/com/aamir/batch/SpringBatch/SpringBatchApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mohammadaamir1102&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mohammadaamir1102/Service-Registry.git&quot;,
+    &quot;accountId&quot;: &quot;db36e3a2-19ab-44bf-9236-ff9dd425ad82&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2jEkQMb9VO7eHmPIbVik3bmyzWl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.KafkaProducerExampleApplication.executor": "Run",
+    "Docker.docker-compose.yml.zookeeper: Compose Deployment.executor": "Run",
+    "Maven.kafka-producer-example [clean].executor": "Run",
+    "Maven.kafka-producer-example [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/spring apache kafka new implementation/kafka-producer-example/src/main/resources",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring apache kafka new implementation\kafka-producer-example\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.KafkaProducerExampleApplication">
+    <configuration name="KafkaProducerExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aamir.kafka_producer_example.KafkaProducerExampleApplication" />
+      <module name="kafka-producer-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aamir.kafka_producer_example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zookeeper" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.KafkaProducerExampleApplication" />
+        <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bec3164-c6d4-4def-ad21-6e1857a6a4ef" name="Changes" comment="" />
+      <created>1720959609900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720959609900</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/kafka_producer_example/controller/EvenController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
