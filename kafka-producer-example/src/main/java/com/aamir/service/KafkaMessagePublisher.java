@@ -1,5 +1,8 @@
-package com.aamir.kafka_producer_example.service;
+package com.aamir.service;
 
+import com.aamir.controller.EventController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -10,18 +13,20 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class KafkaMessagePublisher {
 
+    Logger log = LoggerFactory.getLogger(KafkaMessagePublisher.class);
+
     @Autowired
     private KafkaTemplate<String, Object> template;
 
 
     public void sendMessageToTopic(String message) {
-        CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("test-topic-1", message);
+        CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("ak-test-topic", message);
         furtherProcessing.whenComplete((result, exception) -> {
             if (exception == null) {
-                System.out.println("partiton is " + result.getRecordMetadata().partition());
-                System.out.println("Sent Message=[" + message + "] with offset=[" + result.getRecordMetadata().offset() + "]");
+                log.info("partiton is " + result.getRecordMetadata().partition());
+                log.info("Sent Message=[" + message + "] with offset=[" + result.getRecordMetadata().offset() + "]");
             } else {
-                System.out.println("Unable to send message=[" + message + "] due to : " + exception.getMessage());
+                log.info("Unable to send message=[" + message + "] due to : " + exception.getMessage());
             }
         });
     }

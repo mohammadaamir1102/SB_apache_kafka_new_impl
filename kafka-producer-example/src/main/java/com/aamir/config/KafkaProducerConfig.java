@@ -1,4 +1,4 @@
-package com.aamir.kafka_producer_example.config;
+package com.aamir.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.internals.Topic;
@@ -11,6 +11,6 @@ public class KafkaProducerConfig {
     @Bean
     public NewTopic createTopic(){
         return new
-                NewTopic("test-topic-1",5, (short) 1);
+                NewTopic("ak-test-topic",5, (short) 1);
     }
 }

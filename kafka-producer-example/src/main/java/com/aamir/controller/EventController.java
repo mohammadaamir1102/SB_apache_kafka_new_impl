@@ -1,6 +1,8 @@
-package com.aamir.kafka_producer_example.controller;
+package com.aamir.controller;
 
-import com.aamir.kafka_producer_example.service.KafkaMessagePublisher;
+import com.aamir.service.KafkaMessagePublisher;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/producer-app")
-public class EvenController {
+public class EventController {
+
+    Logger log = LoggerFactory.getLogger(EventController.class);
 
     @Autowired
     private KafkaMessagePublisher kafkaMessagePublisher;
@@ -19,12 +23,12 @@ public class EvenController {
     @GetMapping("/publish/{message}")
     public ResponseEntity<?> messagePublisher(@PathVariable String message) {
         try {
-            for (int i = 0; i < 999; i++) {
-                kafkaMessagePublisher.sendMessageToTopic(message);
+            for (int i = 0; i < 100000; i++) {
+                kafkaMessagePublisher.sendMessageToTopic(message + " " + i);
             }
             return ResponseEntity.ok("Message published done");
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("error in messagePublisher method of EventController {} ", e);
         }
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
     }
