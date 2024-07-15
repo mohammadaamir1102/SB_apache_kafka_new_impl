@@ -12,4 +12,10 @@ public class KafkaProducerConfig {
         return new
                 NewTopic("aaamirKhan-topic",3, (short) 1);
     }
+
+    @Bean
+    public NewTopic pojoTopic(){
+        return new
+                NewTopic("pojo-topic",3, (short) 1);
+    }
 }

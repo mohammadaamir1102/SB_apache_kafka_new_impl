@@ -1,6 +1,7 @@
 package com.aamir.service;
 
 import com.aamir.controller.EventController;
+import com.aamir.entity.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,19 +24,23 @@ public class KafkaMessagePublisher {
         CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("aaamirKhan-topic", message);
         furtherProcessing.whenComplete((result, exception) -> {
             if (exception == null) {
-                log.info("partiton is " + result.getRecordMetadata().partition());
-                log.info("Sent Message=[" + message + "] with offset=[" + result.getRecordMetadata().offset() + "]");
+                log.info("Partitions is {}", result.getRecordMetadata().partition());
+                log.info("In sendMessageToTopic Sent Message= {} with offset= {}", message, result.getRecordMetadata().offset());
             } else {
-                log.info("Unable to send message=[" + message + "] due to : " + exception.getMessage());
+                log.info("In sendMessageToTopic Unable to send message= {} due to {} : ", message, exception.getMessage());
             }
         });
     }
 
-
-    /*
-    public void sendMessageToTopic(String message) {
-        template.send("aamir-topic786", message);
+    public void sendPojoMessage(Employee employee) {
+        CompletableFuture<SendResult<String, Object>> furtherProcessing = template.send("pojo-topic", employee);
+        furtherProcessing.whenComplete((result, exception) -> {
+            if (exception == null) {
+                log.info("In sendPojoMessage Sent Message= {} with offset= {}", employee.toString(), result.getRecordMetadata().offset());
+            } else {
+                log.info("In sendPojoMessage Unable to send message= {} due to {} : ", employee.toString(), exception.getMessage());
+            }
+        });
     }
 
-     */
 }

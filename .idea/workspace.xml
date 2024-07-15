@@ -94,6 +94,8 @@
       <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/controller/StudentController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/entity/Student.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SpringBootWithMSSql/SpringBootWithMSSql/src/main/java/com/aamir/repo/StudentRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-consumer-example/src/main/java/com/aamir/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Microservices/ServiceRegistry/src/main/java/com/aamir/service/registry/ServiceRegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Microservices/ServiceRegistry/src/main/java/com/aamir/service/registry/ServiceRegistryApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/order-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MicroservicesTutorial/payment-service/src/main/java/com/aamir/controller/PaymentController.java" afterDir="false" />
@@ -106,6 +108,11 @@
       <change beforePath="$PROJECT_DIR$/../SpringBatch/src/test/java/com/aamir/batch/SpringBatch/SpringBatchApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-consumer-example/src/main/java/com/aamir/consumer/KafkaMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-example/src/main/java/com/aamir/consumer/KafkaMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-consumer-example/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-example/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/config/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/service/KafkaMessagePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/java/com/aamir/service/KafkaMessagePublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-producer-example/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer-example/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,12 +176,13 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/spring apache kafka new implementation/kafka-consumer-example/src/main/resources",
+    "last_opened_file_path": "D:/spring apache kafka new implementation/kafka-consumer-example/src/main/java/com/aamir",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\spring apache kafka new implementation\kafka-consumer-example\src\main\java\com\aamir" />
       <recent name="D:\spring apache kafka new implementation\kafka-consumer-example\src\main\resources" />
       <recent name="D:\spring apache kafka new implementation\kafka-producer-example\src\main\resources" />
     </key>
@@ -240,8 +248,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.aamir.KafkaProducerExampleApplication" />
         <item itemvalue="Application.KafkaConsumerExampleApplication" />
+        <item itemvalue="Application.com.aamir.KafkaProducerExampleApplication" />
         <item itemvalue="Application.KafkaProducerExampleApplication" />
         <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
       </list>
