@@ -6,7 +6,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.kafka.annotation.DltHandler;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.annotation.RetryableTopic;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.stereotype.Service;
@@ -54,6 +56,7 @@ public class KafkaMessageListener {
         log.info("pojo object is in String {} and object {} ", employee.toString(), employee);
     }
 
+    @RetryableTopic(attempts = "4") // default attempt is 3 and internally create 3 topic for retry
     @KafkaListener(topics = "${service.topic.name}", groupId = "retry-group")
     public void consumeEvent(User user, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, @Header(KafkaHeaders.OFFSET) long offset) {
         try {
@@ -66,6 +69,11 @@ public class KafkaMessageListener {
             log.error("error {}", e.getMessage());
         }
 
+    }
+
+    @DltHandler
+    public void listenDeadLetterTopic(User user, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, @Header(KafkaHeaders.OFFSET) long offset){
+        log.info("DLT Received: {} from {} offset {} ", user.getId(), topic, offset);
     }
 
 }
