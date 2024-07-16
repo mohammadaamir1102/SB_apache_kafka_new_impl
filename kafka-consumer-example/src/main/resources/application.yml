@@ -1,6 +1,10 @@
 server:
   port: 9292
 
+service:
+  topic:
+    name: kafka-error-handling-demo
+
 # Below config is achieved by other way into KafkaProducerConfig class
 #
 #spring:

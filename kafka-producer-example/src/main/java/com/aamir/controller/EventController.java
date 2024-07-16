@@ -1,6 +1,7 @@
 package com.aamir.controller;
 
 import com.aamir.entity.Employee;
+import com.aamir.entity.User;
 import com.aamir.service.KafkaMessagePublisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +37,17 @@ public class EventController {
         try {
             kafkaMessagePublisher.sendPojoMessage(employee);
             return ResponseEntity.ok("Pojo Data is published ");
+        } catch (Exception e) {
+            log.error("error: ", e);
+        }
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+
+    @PostMapping("/kafkaRetryMechanism")
+    public ResponseEntity<?> kafkaRetryMechanism(@RequestBody User user) {
+        try {
+            kafkaMessagePublisher.sendUserMessage(user);
+            return ResponseEntity.ok("Retry Mechanism testing data is pushed");
         } catch (Exception e) {
             log.error("error: ", e);
         }

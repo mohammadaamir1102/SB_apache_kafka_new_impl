@@ -3,6 +3,7 @@ package com.aamir.config;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -15,6 +16,15 @@ import java.util.Map;
 
 @Configuration
 public class KafkaProducerConfig {
+
+    @Value("${service.topic.name}")
+    private String kafkaErrorHandlingTopic;
+
+    @Bean
+    public NewTopic kafkaErrorHandlingTopic(){
+        return new
+                NewTopic(kafkaErrorHandlingTopic,3, (short) 1);
+    }
 
     @Bean
     public NewTopic createTopic(){

@@ -1,10 +1,18 @@
 package com.aamir.consumer;
 
 import com.aamir.entity.Employee;
+import com.aamir.entity.User;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.support.KafkaHeaders;
+import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Stream;
 
 @Service
 public class KafkaMessageListener {
@@ -42,8 +50,22 @@ public class KafkaMessageListener {
     */
 
     @KafkaListener(topics = "pojo-topic", groupId = "pojo-group")
-    public void pojoConsumer(Employee employee){
+    public void pojoConsumer(Employee employee) {
         log.info("pojo object is in String {} and object {} ", employee.toString(), employee);
+    }
+
+    @KafkaListener(topics = "${service.topic.name}", groupId = "retry-group")
+    public void consumeEvent(User user, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, @Header(KafkaHeaders.OFFSET) long offset) {
+        try {
+            log.info("Received: {} from {} offset {} ", new ObjectMapper().writeValueAsString(user), topic, offset);
+            List<String> restrictedIPAddress = Stream.of("10.100.15.235", "10.100.16.236", "10.100.17.237").toList();
+            if (restrictedIPAddress.contains(user.getIpAddress())) {
+                throw new RuntimeException("Invalid IP Address is received!");
+            }
+        } catch (JsonProcessingException e) {
+            log.error("error {}", e.getMessage());
+        }
+
     }
 
 }
